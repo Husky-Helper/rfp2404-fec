@@ -66,5 +66,4 @@ export default function AnswerForm({closeForm, id}) {
 
         </div>
     )
-
 }
