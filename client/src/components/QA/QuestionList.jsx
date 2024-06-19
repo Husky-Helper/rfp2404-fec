@@ -25,8 +25,8 @@ const QuestionList = function (props) {
                 console.log(err);
             })
     }, []);
-    console.log(questionLists)
-  
+    console.log(questionLists);
+
     const filterQuestion = (searchKey && searchKey.length>= 3) ? questionLists.filter(question => question.question_body.toLowerCase().includes(searchKey.toLowerCase())) : questionLists
 
     return (
@@ -39,7 +39,7 @@ const QuestionList = function (props) {
 
                     <div key = {id}>
                         <Question  data-testid="test-question" question={questionList.question_body} helpfulness = {questionList.question_helpfulness} id = {questionList.question_id}
-                        /> 
+                        />
                         <Answer data-testid = "test-answer" id = {questionList.question_id}/>
                     </div>
 

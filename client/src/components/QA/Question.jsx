@@ -38,7 +38,7 @@ export default function Question(props) {
                 <Addanswer id = {id}/>
                 </div>
             </div>
-            
+
         </div>
     )
 }

@@ -14,9 +14,6 @@ import AddPhoto from '../components/QA/AddPhoto.jsx';
 import AnswerForm from '../components/QA/AnswerForm.jsx';
 import AddQuestionForm from '../components/QA/AddQuestionForm.jsx';
 
-
-
-
 describe('Question Component', () => {
     const mockQuestion = {
         question: "This is jest",
@@ -80,7 +77,7 @@ describe('Answer Component', () => {
         const button = await screen.findByText('LOAD MORE ANSWERS')
         expect(button).toBeInTheDocument;
     })
-    
+
 })
 
 describe('QuestionList Component', () => {
@@ -136,7 +133,7 @@ describe('Answer List', () => {
         fireEvent.click(reportLink);
         expect(screen.getByText('Report')).toBeInTheDocument;  // Check if the text changes back to 'Report'
     })
-    
+
 
 })
 describe('Answer Body', () => {

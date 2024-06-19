@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import Thumbnail from './Thumbnail.jsx';
-import isValidUrl from './validUrlCheck.js';
+
+const isValidUrl = (url) => {
+  const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
+  return urlRegex.test(url);
+};
+
 const ReviewBody = ({body, photos}) => {
 
   const [showMore, setShowMore] = useState(false);

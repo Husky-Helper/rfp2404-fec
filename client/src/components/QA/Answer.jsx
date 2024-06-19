@@ -54,9 +54,8 @@ export default function Answer(props) {
                 {answerLists.length > 2 && (<span className="Load_more" onClick={handleClick}>{showMore ? 'Collapse answers' : 'LOAD MORE ANSWERS '}</span>)}
 
             </div>
-            
+
         </>
     )
 }
-
 

@@ -8,8 +8,11 @@ import Reviews from "./Reviews/Reviews.jsx";
 const App =() =>{
     return <>
     <ProductView/>
-    <QuestionList/>
-    <Reviews/>
+    <div className="QA">
+        <h4>QUESTION & ANSWERS</h4>
+        <QuestionList/>
+    </div>
+    <Reviews />
     </>
 }
 
