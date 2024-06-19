@@ -176,6 +176,44 @@ justify-content: space-between;
   color: red
 }
 
+.form-star { /*star rating - form*/
+  font-size: 30px;
+  color: gold;
+  cursor: pointer
+}
+
+
+.center-lower-fixed-buttons-panel { /*add review and show more buttons panel*/
+  display: flex;
+  justify-content: flex-start;
+}
+
+.center-upper-sort-and-search-panel { /*sort and search bar upper panel within center panel*/
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.add-review-button, .more-review-button { /*add review button*/
+  margin-top: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.head { /*reviews & ratings head*/
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.search-bar-input {
+  width: 200px;
+}
+.name-and-date {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*Michael*/
 .product-view {
   display: flex;
