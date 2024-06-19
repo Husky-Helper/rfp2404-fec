@@ -8,7 +8,7 @@ const ImageGallery = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [expandedView, setExpandedView] = useState(false);
   const [zoomed, setZoomed] = useState(false);
-
+  //test
   const handleThumbnailClick = (index) => {
     setCurrentImageIndex(index);
   };
