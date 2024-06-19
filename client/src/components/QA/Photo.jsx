@@ -1,11 +1,6 @@
 import React from "react";
-import Thumbnail from "../Reviews/Thumbnail.jsx";
-export default function Photo(props) {
 
-    const handleCrossClick = ()=> {
-
-    }
-
+export default function Phooto(props) {
     return (
         props.photo ? (
             <>
@@ -14,7 +9,7 @@ export default function Photo(props) {
                 {props.photo.map((photo ,id) => (
                     (
                         <div key = {id}>
-                            <Thumbnail data-testid= 'photo' photo = {photo} />
+                            <img data-testid="photo" src={photo.url}></img>
                         </div>
                     )
                 ))}
